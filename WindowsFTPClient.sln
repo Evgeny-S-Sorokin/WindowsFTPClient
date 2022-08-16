@@ -6,6 +6,12 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsFTPClient", "WindowsFTPClient\WindowsFTPClient.vcxproj", "{60A619B1-7FBE-4413-80A5-83E27AEACA92}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Application", "Application\Application.vcxproj", "{AEBBA4A2-68F0-463A-81A2-5466A4C40F8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA} = {9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}
+		{60A619B1-7FBE-4413-80A5-83E27AEACA92} = {60A619B1-7FBE-4413-80A5-83E27AEACA92}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cJSON", "cJSON\cJSON.vcxproj", "{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +37,14 @@ Global
 		{AEBBA4A2-68F0-463A-81A2-5466A4C40F8A}.Release|x64.Build.0 = Release|x64
 		{AEBBA4A2-68F0-463A-81A2-5466A4C40F8A}.Release|x86.ActiveCfg = Release|Win32
 		{AEBBA4A2-68F0-463A-81A2-5466A4C40F8A}.Release|x86.Build.0 = Release|Win32
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}.Debug|x64.ActiveCfg = Debug|x64
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}.Debug|x64.Build.0 = Debug|x64
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}.Debug|x86.Build.0 = Debug|Win32
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}.Release|x64.ActiveCfg = Release|x64
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}.Release|x64.Build.0 = Release|x64
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}.Release|x86.ActiveCfg = Release|Win32
+		{9B045F3D-3C3B-4DB1-90B2-54D375AAE2AA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

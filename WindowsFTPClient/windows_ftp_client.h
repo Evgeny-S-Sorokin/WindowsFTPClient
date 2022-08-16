@@ -54,7 +54,7 @@ namespace sorokin
         }
 
         bool ExecuteSimpleCommand( const wchar_t* command );
-        bool GetExecuteResult();
+        DWORD GetExecuteResult();
 
         void Close()
         {

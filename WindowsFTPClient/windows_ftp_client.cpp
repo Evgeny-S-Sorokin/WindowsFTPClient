@@ -57,7 +57,7 @@ namespace sorokin
         return true;
     }
 
-    bool WindowsFtpClient::GetExecuteResult()
+    DWORD WindowsFtpClient::GetExecuteResult()
     {
         DWORD error = 0;
         DWORD size = 0;
@@ -74,21 +74,7 @@ namespace sorokin
             }
         }
 
-        switch ( code )
-        {
-            case 200:
-                [[fallthrough]];
-            case 220:
-            {
-                std::cout << "Code [" << code << "]. Success! Ready for new command.";
-                return true;
-            }
-            default:
-            {
-                std::cout << "Unexpected code [" << code << "] is treated as failure.";
-                return false;
-            }
-        }
+        return code;
     }
 
     void WindowsFtpClient::ProcessError( const CInternetException* const error )

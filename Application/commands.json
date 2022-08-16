@@ -1,0 +1,9 @@
+{
+  "expected_true": [
+    "NOOP"
+  ],
+  "expected_false": [
+    "HELP",
+    "THISISNOTACOMMAND"
+  ]
+}
